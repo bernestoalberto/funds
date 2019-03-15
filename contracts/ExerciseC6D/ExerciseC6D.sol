@@ -175,21 +175,22 @@ contract ExerciseC6D {
                         )
                         external
     {
+        
         require((oracles[msg.sender][0] == index) || (oracles[msg.sender][1] == index) || (oracles[msg.sender][2] == index), "Index does not match oracle request");
 
 
         // CODE EXERCISE 3: Require that the response is being submitted for a request that is still open
-        bytes32 key = 0; /* Replace 0 with code to generate a key using index, flight and timestamp */
-
-
-        oracleResponses[key].responses[statusId].push(msg.sender);
+            byte32 key = keccak256(abi.encodePacked(index,flight, timestamp));
+            require(oracleResponse[key].isOpen,"flight or timestamp do not match oracle request");
+ 
+           oracleResponses[key].responses[statusId].push(msg.sender);
 
         // Information isn't considered verified until at least MIN_RESPONSES
         // oracles respond with the *** same *** information
         if (oracleResponses[key].responses[statusId].length >= MIN_RESPONSES) {
 
             // CODE EXERCISE 3: Prevent any more responses since MIN_RESPONSE threshold has been reached
-            /* Enter code here */
+            emit FlightStatusInfo(flight,timestampt, statusId, true);
 
             // CODE EXERCISE 3: Announce to the world that verified flight status information is available
             /* Enter code here */
@@ -201,7 +202,7 @@ contract ExerciseC6D {
             // Oracle submitting response but MIN_RESPONSES threshold not yet reached
 
             // CODE EXERCISE 3: Announce to the world that verified flight status information is available
-            /* Enter code here */
+              emit FlightStatusInfo(flight,timestampt, statusId, false);
         }
     }
 

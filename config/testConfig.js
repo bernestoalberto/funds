@@ -6,15 +6,16 @@ var Config = async function(accounts) {
     // These test addresses are useful when you need to add
     // multiple users in test scripts
     let testAddresses = [
-        "0x69e1CB5cFcA8A311586e3406ed0301C06fb839a2",
-        "0xF014343BDFFbED8660A9d8721deC985126f189F3",
-        "0x0E79EDbD6A727CfeE09A2b1d0A59F7752d5bf7C9",
-        "0x9bC1169Ca09555bf2721A5C9eC6D69c8073bfeB4",
-        "0xa23eAEf02F9E0338EEcDa8Fdd0A73aDD781b2A86",
-        "0x6b85cc8f612d5457d49775439335f83e12b8cfde",
-        "0xcbd22ff1ded1423fbc24a7af2148745878800024",
-        "0xc257274276a4e539741ca11b590b9447b26a8051",
-        "0x2f2899d6d35b1a48a4fbdc93a37a72f264a9fca7"
+        "0x7311bD9C8E5A3D46f3d36D8e99820682335FB949",
+        "0xaDDc2954A1759bD8207Ba7d3E69EcF0dAa1539ff",
+        "0xDc196587B59A8accbAb502a642CE96AE71E017E1",
+        "0xFA937F92F8a106DCac3f3d2d8930e07e540a596d",
+        "0xbf5F1efcD38b90231d1Bc6694f7Eb54135c989F3",
+        "0xD69BA0709D161543FA19Fa67c2e3ee95da33FB72",
+        "0x4ae0F84a7aD98E6cd3D8c11a7f4e5D9398D364e8",
+        "0xA0484F82C2b4AA9AD9d5ef2BF8fdCaD63EA0DDfb",
+        "0xffD3b6fEBBd109a57ba1EEa998F3bdd84d81cD77",
+        "0x26e68A87dc4040Fdec8aA62f1f8C5c7B2706EEC9"
     ];
 
 

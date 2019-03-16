@@ -1,16 +1,16 @@
 {
-  "name": "blockchain-day1",
+  "name": "funds",
   "version": "1.0.0",
   "description": "",
   "directories": {
     "test": "test"
   },
-  "repository": "https://github.com/techbubble/blockchain-day1",
+  "repository": "https://github.com/bernestoalberto/funds",
   "license": "MIT",
   "scripts": {
-    "test": "truffle test test/ExerciseC6B.js"
+    "test": "truffle test test/funds.js"
   },
-  "author": "Nik Kalyani <nik@kalyani.com> https://www.kalyani.com",
+  "author": "Ernesto Bonet ebonet.eabonet.com https://www.eabonet.com",
   "devDependencies": {
     "bignumber": "1.1.0",
     "openzeppelin-solidity": "^1.10.0",
